@@ -1,0 +1,22 @@
+version: '3.8'
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: web
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    ports:
+      - '3000:3000'
+    networks:
+      - web_local
+      - app_network
+networks:
+  web_local:
+    driver: bridge
+    name: web_local
+  app_network:
+    name: app_gateway
