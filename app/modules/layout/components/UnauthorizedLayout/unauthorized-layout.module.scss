@@ -1,0 +1,32 @@
+.container{
+  margin: 0 auto;
+  width: 935px;
+  padding: 0 20px;
+}
+
+.logoWrapper{
+  display: flex;
+  align-items: end;
+  scale: 1.2;
+
+  object-fit: contain;
+  height: 36px;
+
+}
+.logo{
+}
+.headerWrapper{
+  display: flex;
+  align-items: center;
+  height: 59px;
+  border-bottom: 1px solid #DBDBDB;
+}
+.headerNavigation{
+  display: flex;
+  justify-content: space-between;
+}
+.headerAuthorization{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
