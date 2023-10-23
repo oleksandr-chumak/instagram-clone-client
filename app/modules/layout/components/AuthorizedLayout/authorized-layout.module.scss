@@ -1,0 +1,69 @@
+.authorizedLayoutWrapper{
+  display: flex;
+}
+.contentContainer{
+
+}
+
+//TODO: fix expand animation;
+.sideBarWrapper{
+  position: relative;
+  padding: 8px 12px 20px 12px;
+  flex: 0 0 219px;
+  height: 100vh;
+
+  background-color: white;
+  z-index: 2;
+
+  transition: all 0.3s ease 0s;
+
+  border-right: 1px solid #DBDBDB;
+  &.collapsed{
+    flex: 0 0 48px;
+  }
+}
+
+
+.sideBarList{
+
+}
+
+.sideBarItem{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  padding: 12px;
+  border-radius: 8px;
+  margin: 2px 0;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease 0s;
+
+  &:hover{
+    background-color: #f2f2f2;
+  }
+
+  &.collapsed{
+    outline: 1px solid #DBDBDB;
+  }
+
+}
+.sideBarItemText{
+  font-size: 18px;
+  font-weight: 400;
+
+  &.active{
+   font-weight: 600;
+  }
+
+}
+
+.sideBarItemIcon{
+  font-size: 24px;  z-index: 2;
+
+}
+.headerItemIconActive{
+  font-size: 24px;
+}

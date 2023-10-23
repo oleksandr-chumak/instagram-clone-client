@@ -1,0 +1,1 @@
+export * from './sideBarModalWindowContainer/side-bar-modal-window-container.component';
