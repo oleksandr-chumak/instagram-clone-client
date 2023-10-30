@@ -2,12 +2,15 @@ import React, { FC } from 'react';
 import UnauthorizedLayoutHeader from '@/app/modules/layout/components/UnauthorizedLayout/unauthorized-layout-header.component';
 import UnauthorizedLayoutContainer from '@/app/modules/layout/components/UnauthorizedLayout/unauthorized-layout-container.component';
 import UnauthorizedLayoutFooter from '@/app/modules/layout/components/UnauthorizedLayout/unauthorized-layout-footer.component';
-import { Children } from '@/common';
+import { UnauthorizedLayoutProps } from '@/app/modules/layout/types/unauthorizedLayout';
 
-const UnauthorizedLayout: FC<Children> = ({ children }: Children) => {
+const UnauthorizedLayout: FC<UnauthorizedLayoutProps> = ({
+  children,
+  withAuth = true,
+}: UnauthorizedLayoutProps) => {
   return (
     <>
-      <UnauthorizedLayoutHeader />
+      <UnauthorizedLayoutHeader withAuth={withAuth} />
       <UnauthorizedLayoutContainer>{children}</UnauthorizedLayoutContainer>
       <UnauthorizedLayoutFooter />
     </>

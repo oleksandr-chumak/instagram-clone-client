@@ -1,0 +1,17 @@
+.ribbonWrapper{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+.ribbon{
+  height: 1px;
+  flex: 1 1 auto;
+  background-color: #ededed;
+}
+.text{
+  color: #898989;
+  font-weight: 600;
+  font-size: .8125rem;
+  line-height: 14px;
+}

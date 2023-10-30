@@ -1,0 +1,23 @@
+.formWrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  padding-top: 30px;
+
+  width: 100%;
+}
+.submitButton{
+  margin-top: 10px;
+}
+
+.alternativeLoginMethodsWrapper{
+  margin-top: 18px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 18px;
+
+  width: 100%;
+
+}

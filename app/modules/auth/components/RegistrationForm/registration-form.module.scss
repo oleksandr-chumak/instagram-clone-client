@@ -1,0 +1,26 @@
+.formWrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  padding-top: 10px;
+
+  width: 100%;
+}
+
+.alternativeRegistrationMethods{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 18px;
+
+  margin-bottom: 18px;
+
+  width: 100%;
+}
+
+.userPrompting{
+  text-align: center;
+  color: #737373;
+  font-weight: 600;
+}
