@@ -1,0 +1,44 @@
+.customLink {
+  text-decoration: none;
+
+  // color
+  &.primary{
+    color: black;
+    &:hover{
+      color: #939393;
+    }
+  }
+
+  &.primaryBlue{
+    color: #01376b;
+  }
+
+  &.lightBlue{
+    color: #2a9ff4;
+  }
+
+  // font-size
+  &.small{
+    font-size: 12px;
+  }
+
+  &.medium{
+    font-size: .875rem;
+  }
+
+  &.big{
+    font-size: 14px;
+  }
+
+  // font-weight
+  &.normal{
+    font-weight: 300;
+  }
+
+  &.semiBold{
+    font-weight: 500;
+  }
+  &.bold{
+    font-weight: 700;
+  }
+}

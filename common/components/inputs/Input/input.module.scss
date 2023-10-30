@@ -1,0 +1,50 @@
+.inputWrapper {
+  position: relative;
+
+  .input {
+    width: 100%;
+    outline: none;
+    height: 36px;
+    border: 1px solid #DBDBDB;
+    padding: 9px 0 7px 8px;
+    border-radius: 3px;
+    font-size: 13px;
+    background-color: #FAFAFA;
+  }
+
+  .label {
+    position: absolute;
+    left: 9px;
+    top: 13px;
+
+    opacity: 1;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    cursor: text;
+    color: #737373;
+    max-width: calc(100% - 24px);
+    font-size: 12px;
+
+    transition: all 0.3s ease 0s;
+  }
+
+  .input::placeholder {
+    opacity: 0;
+  }
+
+  .input:placeholder-shown {
+    text-overflow: ellipsis;
+  }
+
+  .input:not(:placeholder-shown) + .label {
+    transform: scale(calc(10 / 12)) translateY(-10px) translateX(-10%);
+  }
+
+  .input:not(:placeholder-shown) {
+    padding: 14px 0 2px 8px;
+    font-size: 12px;
+  }
+}
